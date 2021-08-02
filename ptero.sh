@@ -8,19 +8,19 @@ reset='tput sgr0'
 
 
 
-echo "${red}1. Install pterodactyl"
-echo "${green}2. Install wings"
-echo "${reset}3. Uninstall pterodactyl(This will delete everything"
-echo "${green}4. Uninstall wings"
-echo "${red}=+=+=+=+=+=+=+Themes=+=+=+=+=+=+=+="
-echo "${reset}5. black and red"
-echo "${green}6. black and purple"
-echo "${red}7. Minecraft theme (it sucks)"
-echo "${reset}=+=+=+=+=+=+=+Others=+=+=+=+=+=+=+="
-echo "${green}8. Update the panel (0.7 => 1.x)"
-echo "${red}9. Upgrade to wing"
-echo "${reset}10. Fix your panel"
-echo "${green}11. Install MCPASTE"
+echo ${red}"1. Install pterodactyl"
+echo ${green}"2. Install wings"
+echo ${reset}"3. Uninstall pterodactyl(This will delete everything"
+echo ${green}"4. Uninstall wings"
+echo ${red}"=+=+=+=+=+=+=+Themes=+=+=+=+=+=+=+="
+echo ${reset}"5. black and red"
+echo ${green}"6. black and purple"
+echo ${red}"7. Minecraft theme (it sucks)"
+echo ${reset}"=+=+=+=+=+=+=+Others=+=+=+=+=+=+=+="
+echo ${green}"8. Update the panel (0.7 => 1.x)"
+echo ${red}"9. Upgrade to wing"
+echo ${reset}"10. Fix your panel"
+echo ${green}"11. Install MCPASTE"
 
 read -p "Please enter a number: " choice
 if [ $choice == "1" ]
@@ -86,7 +86,7 @@ php artisan migrate --seed --force
 
 chown -R www-data:www-data /var/www/pterodactyl/*
 
-echo "${green}Successfully updated"
+echo ${green}"Successfully updated"
 
 fi
 if [ $choice == "9" ]
@@ -103,7 +103,7 @@ cd /var/www/pterodactyl
 
 php artisan down
 
-echo "${red}Panel in maintenance mode"
+echo ${red}"Panel in maintenance mode"
 
 curl -L https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz | tar -xzv
 
@@ -123,9 +123,9 @@ php artisan up
 
 clear
 
-echo "${green}Panel out of maintenance mode"
-echo "${green}Successfully fixed"
-echo "${red}our panel has been fixed! Script by Lil Panda#3225"
+echo ${green}"Panel out of maintenance mode"
+echo ${green}"Successfully fixed"
+echo ${red}"our panel has been fixed! Script by Lil Panda#3225"
 fi
 if [ $choice == "11" ]
     then
