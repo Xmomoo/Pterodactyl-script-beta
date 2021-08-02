@@ -20,7 +20,7 @@ if [ $choice == "1" ]
 fi
 if [ $choice == "2" ]
     then
-   bash (<curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
+   bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
 fi
 if [ $choice == "3" ]
     then
