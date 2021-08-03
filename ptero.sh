@@ -133,7 +133,7 @@ echo "done"
 fi
 if [ $choice == "12" ]
     then
-cd var/www/pterodactyl/resources/scripts/components/server/files
+cd /var/www/pterodactyl/resources/scripts/components/server/files
 
 rm UploadButton.tsx
 
