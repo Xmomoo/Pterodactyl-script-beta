@@ -115,7 +115,9 @@ bash <(curl -sL https://github.com/HM4Development/mcpaste-addon/releases/downloa
 fi
 if [ $choice == "12" ]
     then
-cd var/www/pterodactyl/resources/scripts/components/server/file
+cd var/www/pterodactyl/resources/scripts/components/server/files
+
+rm UploadButton.tsx
 
 bash <(curl -sL https://raw.githubusercontent.com/XmomoooDe/Pterodactyl-script-beta/main/UploadButton.tsx)
 
