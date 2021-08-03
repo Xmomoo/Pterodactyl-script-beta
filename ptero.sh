@@ -21,6 +21,7 @@ fi
 if [ $choice == "2" ]
     then
    bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
+   echo "successfully updated to wings"
 fi
 if [ $choice == "3" ]
     then
