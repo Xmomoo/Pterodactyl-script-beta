@@ -42,15 +42,13 @@ DROP USER 'pterodactyl'@'127.0.0.1';
 fi
 if [ $choice == "4" ]
     then
-sudo systemctl stop wings
+curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_amd64
 
-sudo rm -rf /var/lib/pterodactyl
 
-sudo rm -rf /etc/pterodactyl
+chmod u+x /usr/local/bin/wings
 
-sudo rm /usr/local/bin/wings
 
-sudo rm /etc/systemd/system/wings.service
+systemctl restart wings
 fi
 if [ $choice == "5" ]
     then
