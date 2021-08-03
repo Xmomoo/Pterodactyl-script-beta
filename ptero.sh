@@ -128,4 +128,7 @@ npm install -g yarn
 yarn install
 
 yarn build:production
+
+
+echo "Done"
 fi
