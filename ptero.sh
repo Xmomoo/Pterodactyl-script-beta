@@ -150,7 +150,7 @@ yarn build:production
 
 echo "done"
 fi
-if [$choice == "13"]
+if [ $choice == "13" ]
    then
 cd /var/www/pterodactyl/app/Http/Controllers/Api/Client/Servers/
 
