@@ -16,13 +16,13 @@ echo "12. Install uploadPprogresTracker addon 1.x"
 read -p "Please enter a number: " choice
 if [ $choice == "1" ]
     then
-   bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-panel.sh)
+   sudo bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-panel.sh)
    
    echo "done"
 fi
 if [ $choice == "2" ]
     then
-   bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
+  sudo bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
    
    echo "done"
 fi
@@ -60,19 +60,19 @@ echo "done"
 fi
 if [ $choice == "5" ]
     then
-bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/main/resources/DarkNRed/install.sh)
+sudo bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/main/resources/DarkNRed/install.sh)
 
 echo "done"
 fi
 if [ $choice == "6" ]
     then
-bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/main/resources/DarkNPurple/install.sh)
+sudo bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/main/resources/DarkNPurple/install.sh)
 
 echo "done"
 fi
 if [ $choice == "7" ]
     then
-bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/main/resources/mcTheme/install.sh)
+sudo bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/main/resources/mcTheme/install.sh)
 
 echo "done"
 fi
@@ -84,7 +84,7 @@ echo "Successfully updated"
 fi
 if [ $choice == "9" ]
     then
-curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_amd64
+sudo curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_amd64
 
 chmod u+x /usr/local/bin/wings
 
@@ -100,7 +100,7 @@ php artisan down
 
 echo "Panel in maintenance mode"
 
-curl -L https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz | tar -xzv
+sudo curl -L https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz | tar -xzv
 
 chmod -R 755 storage/* bootstrap/cache
 
@@ -126,7 +126,7 @@ if [ $choice == "11" ]
     then
 cd /var/www/pterodactyl
 
-bash <(curl -sL https://github.com/HM4Development/mcpaste-addon/releases/download/v2.0.0/install.sh)
+sudo bash <(curl -sL https://github.com/HM4Development/mcpaste-addon/releases/download/v2.0.0/install.sh)
 
 echo "done"
 fi
@@ -136,7 +136,7 @@ cd /var/www/pterodactyl/resources/scripts/components/server/files
 
 rm UploadButton.tsx
 
-wget https://raw.githubusercontent.com/XmomoooDe/Pterodactyl-script-beta/main/UploadButton.tsx
+sudo wget https://raw.githubusercontent.com/XmomoooDe/Pterodactyl-script-beta/main/UploadButton.tsx
 
 cd /var/www/pterodactyl
 
