@@ -36,12 +36,11 @@ sudo unlink /etc/nginx/sites-enabled/pterodactyl.conf
 
 sudo unlink /etc/apache2/sites-enabled/pterodactyl.conf
 
+mysql -e "DROP DATABASE panel;"
 
-mysql -u root
+mysql -e "DROP DATABASE panel;"
 
-DROP DATABASE panel;
-
-DROP USER 'pterodactyl'@'127.0.0.1';
+mysql -e "DROP USER 'pterodactyl'@'127.0.0.1';"
 
 echo "done"
 fi
