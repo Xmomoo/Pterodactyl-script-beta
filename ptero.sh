@@ -12,7 +12,6 @@ echo "9. Upgrade to wing"
 echo "10. Fix your panel"
 echo "11. Install MCPASTE addon 1.x"
 echo "12. Install uploadPprogresTracker addon 1.x"
-echo "13. Plugin installer addon"
 
 read -p "Please enter a number: " choice
 if [ $choice == "1" ]
@@ -149,44 +148,4 @@ yarn install
 yarn build:production
 
 echo "done"
-fi
-if [ $choice == "13" ]
-   then
-cd /var/www/pterodactyl/app/Http/Controllers/Api/Client/Servers/
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/PluginInstallerController.php
-
-cd ../../../../Middleware/Api/Client/Server/
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/IsMinecraft.php
-
-cd ../../../../Requests/Api/Client/Servers/
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/PluginInstallerRequest.php
-
-cd ../../../../../Repositories/Wings/
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/DaemonMinecraftPluginRepository.php
-
-cd ../../../database/migrations
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/2019_09_01_13244_add_plugins_table.php
-
-cd ../../resources/scripts/api/server
-
-mkdir plugins
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/installPlugin.ts
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/searchPlugins.ts
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/uninstallPlugin.ts
-
-cd ../../components/server
-
-mkdir plugins
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/ManageButton.tsx
-
-wget https://raw.githubusercontent.com/XmomoooDe/ignore/main/PluginInstallerContainer.tsx
 fi
