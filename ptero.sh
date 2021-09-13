@@ -38,8 +38,6 @@ sudo unlink /etc/apache2/sites-enabled/pterodactyl.conf
 
 mysql -e "DROP DATABASE panel;"
 
-mysql -e "DROP DATABASE panel;"
-
 mysql -e "DROP USER 'pterodactyl'@'127.0.0.1';"
 
 echo "done"
