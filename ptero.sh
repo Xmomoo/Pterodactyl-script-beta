@@ -18,8 +18,7 @@ if [ $choice == "1" ]
     then
    sudo bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-panel.sh)
    
-   echo "done"
-fi
+ fi
 if [ $choice == "2" ]
     then
   sudo bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
