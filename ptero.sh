@@ -22,7 +22,6 @@ if [ $choice == "1" ]
 if [ $choice == "2" ]
     then
   echo "in maintenance"
-   echo "done"
 fi
 if [ $choice == "3" ]
     then
