@@ -21,8 +21,7 @@ if [ $choice == "1" ]
  fi
 if [ $choice == "2" ]
     then
-  sudo bash <(curl -sL https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/master/install-wings.sh)
-   
+  echo "in maintenance"
    echo "done"
 fi
 if [ $choice == "3" ]
