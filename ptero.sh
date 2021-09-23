@@ -33,7 +33,15 @@ sudo rm /etc/systemd/system/pteroq.service
 
 sudo unlink /etc/nginx/sites-enabled/pterodactyl.conf
 
+rm -rf /etc/nginx/sites-available/pterodactyl.conf
+
+rm -rf /etc/nginx/sites-enabled/pterodactyl.conf
+
 sudo unlink /etc/apache2/sites-enabled/pterodactyl.conf
+
+rm -rf /etc/apache2/sites-available/pterodactyl.conf
+
+rm -rf /etc/apache2/sites-enabled/pterodactyl.conf
 
 mysql -e "DROP DATABASE panel;"
 
