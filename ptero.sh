@@ -1122,7 +1122,7 @@ sudo curl -L https://github.com/pterodactyl/panel/releases/latest/download/panel
 
 chmod -R 755 storage/* bootstrap/cache
 
-composer install --no-dev --optimize-autoloader yes
+composer yes install --no-dev --optimize-autoloader
 
 php artisan view:clear && php artisan config:clear
 
